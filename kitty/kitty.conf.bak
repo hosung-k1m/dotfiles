@@ -1,0 +1,9 @@
+font_size 13
+map cmd+\ toggle_fullscreen
+macos_titlebar_mode os
+
+
+# BEGIN_KITTY_THEME
+# Tango Dark
+include current-theme.conf
+# END_KITTY_THEME
