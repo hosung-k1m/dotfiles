@@ -8,7 +8,7 @@ for m in $(aerospace list-monitors | awk '{print $1}'); do
     space=(
       space="$sid"
       icon="$sid"
-      icon.highlight_color=$GREEN
+      icon.highlight_color=$WHITE
       icon.padding_left=10
       icon.padding_right=10
       display=$m

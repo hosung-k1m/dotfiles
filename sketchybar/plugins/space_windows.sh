@@ -38,7 +38,7 @@ if [ "$SENDER" = "aerospace_workspace_change" ]; then
 
   sketchybar --set space.$CURRENT_WORKSPACE icon.highlight=true \
                          label.highlight=true \
-                         background.border_color=$GREY
+                         background.border_color=$WHITE
 
   for i in $AEROSAPCE_WORKSPACE_FOCUSED_MONITOR; do
     sketchybar --set space.$i display=$AEROSPACE_FOCUSED_MONITOR

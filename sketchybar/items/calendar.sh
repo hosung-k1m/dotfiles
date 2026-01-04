@@ -8,7 +8,6 @@ calendar=(
     update_freq=30
     label.color=$BLACK
     script="$PLUGIN_DIR/calendar.sh"
-    click_script="$PLUGIN_DIR/zen.sh"
     background.drawing=off
     label.shadow.drawing=off
     label.y_offset=-2
