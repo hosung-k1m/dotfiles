@@ -62,8 +62,8 @@ inner.vertical = 6
 outer.bottom = 3
 outer.top = [
   { monitor."built-in" = 3 },
-  { monitor."main" = 30 },
-  {monitor."HP E24 G4" = 30},
+  { monitor."main" = 32 },
+  {monitor."HP E24 G4" = 32},
   35
 ]
 outer.left = 3
