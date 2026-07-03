@@ -12,12 +12,9 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['exec-and-forget sketchybar',
+after-startup-command = [
 'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
-
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_workspace_change AEROSPACE_FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE AEROSPACE_PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -62,7 +59,8 @@ inner.vertical = 6
 outer.bottom = 3
 outer.top = [
   { monitor."built-in" = 3 },
-  {monitor."HP E24 G4" = 32},
+  { monitor."DELL U3425WE" = 3 },
+  {monitor."HP E24 G4" = 3},
   35
 ]
 outer.left = 3
@@ -134,6 +132,8 @@ alt-t = 'workspace T'
 alt-b = 'workspace B'
 alt-o = 'workspace O'
 alt-a = 'workspace A'
+alt-v = 'workspace V'
+alt-n = 'workspace N'
 
 
 
@@ -153,6 +153,8 @@ alt-shift-t = 'move-node-to-workspace T'
 alt-shift-b = 'move-node-to-workspace B'
 alt-shift-o = 'move-node-to-workspace O'
 alt-shift-a = 'move-node-to-workspace A'
+alt-shift-v = 'move-node-to-workspace V'
+alt-shift-n = 'move-node-to-workspace N'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -194,8 +196,8 @@ if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace V'
 
 
 # ~/.aerospace.toml example
